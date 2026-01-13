@@ -1,5 +1,5 @@
 // Update footer year
-document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('years').textContent = new Date().getFullYear();
 
 // Simple interaction
 const btn = document.getElementById('helloBtn');
