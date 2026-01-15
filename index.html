@@ -13,9 +13,16 @@
       <nav>
         <a href="#home">Home</a>
         <input type="text" placeholder="Search..">
-        <a href="#myMovies">My Movies</a>
+        <button id="myMoviesBtn" onclick="openPanel()">My Movies</button>
       </nav>
     </header>
+
+
+    <div id="sidePanel">
+      <button id="closePanel" onclick="closePanel()">x</button>
+      <p>Your movie list goes here.</p>
+    </div>
+
 
     <main id="home" class="container">
       <section>
@@ -29,6 +36,8 @@
         <p>Built with plain HTML, CSS, and JavaScript—no frameworks.</p>
       </section>
     </main>
+
+
 
     <footer class="site-footer">
       <small>&copy; <span id="years"></span> Your Name</small>

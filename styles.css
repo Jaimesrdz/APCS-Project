@@ -28,7 +28,6 @@ body {
   max-width: 800px;
   margin: 2rem auto;
   padding: 1.5rem;
-  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 16px;
   backdrop-filter: blur(6px);
@@ -42,6 +41,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+#sidePanel{
+  position: fixed;
+  z-index: 999;
+  background: #0f172a;
+  top: 0;
+  right: -300px;
+  border: 2px solid #e5e7eb;
+  border-radius: 16px;
+  width: 300px;
+  height: 100%;
+}
+
+#sidePanel.active{
+  right:0;
 }
 
 h1, h2 {
@@ -75,7 +90,7 @@ nav a:hover {
 
 button {
   appearance: none;
-  border: 1px solid rgba(255,255,255,0.12);
+  border: 1px solid rgba(58, 58, 58, 0.438);
   background: #0b1220;
   color: var(--text);
   padding: 0.6rem 1rem;
@@ -86,7 +101,7 @@ button {
 
 button:hover {
   transform: translateY(-1px);
-  border-color: rgba(255,255,255,0.22);
+  border-color: rgba(255, 255, 255, 0.247);
   box-shadow: 0 8px 24px rgba(0,0,0,0.35);
 }
 
