@@ -1,8 +1,8 @@
 :root {
-  --bg: #0f172a;
+  --bg: #331116;
   --card: #111827;
-  --text: #e5e7eb;
-  --muted: #9ca3af;
+  --text: hwb(240 96% 2%);
+  --muted: #17612d;
   --accent: #60a5fa;
 }
 
@@ -21,16 +21,34 @@ body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
   color: var(--text);
-  background: radial-gradient(1200px 600px at 10% 10%, #1f2937 0%, var(--bg) 60%);
+  background: radial-gradient(1200px 600px, #000000 0%, var(--bg) );
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1000000px;
   margin: 2rem auto;
   padding: 1.5rem;
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 16px;
   backdrop-filter: blur(6px);
+}
+
+.container2 { 
+  max-width: 100
+}
+.square-button {
+  max-width: 125px;
+  height:150px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.square-button button {
+  width: 100%;
+  height: 100%;}
+
+  .square-button img {
+  width: 100%;
+  height: 100%;
 }
 
 .site-header,
@@ -71,16 +89,16 @@ nav a {
 
 nav input[type="text"] {
   padding: 0.4rem 0.8rem;
-  border: 1px solid #ccc;
+  border: 1px solid #d30c0c;
   border-radius: 6px;
   margin: 0 1rem;
   font-size: 1rem;
 }
 
 nav input[type="text"]:focus {
-  border-color: #2563eb;
+  border-color: #8d0000;
   outline: none;
-  box-shadow: 0 0 0 2px rgba(37,99,235,0.3);
+  box-shadow: 0 0 0 2px rgba(185, 107, 4, 0.3);
 }
 
 
@@ -90,10 +108,9 @@ nav a:hover {
 
 button {
   appearance: none;
-  border: 1px solid rgba(58, 58, 58, 0.438);
+  border: 1px solid rgba(0, 0, 0, 0.63);
   background: #0b1220;
   color: var(--text);
-  padding: 0.6rem 1rem;
   border-radius: 10px;
   cursor: pointer;
   transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
