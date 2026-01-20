@@ -18,7 +18,7 @@ html, body {
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto,Arial, Helvetica, sans-serif
   line-height: 1.6;
   color: var(--text);
   background: radial-gradient(1200px 600px, #000000 0%, var(--bg) );
@@ -37,7 +37,9 @@ body {
   max-width: 100
 }
 .square-button {
-  max-width: 125px;
+  display:flex;
+  width: 100%;
+  gap: 10px;
   height:150px;
   border: 1px solid rgba(255,255,255,0.08);
 }
