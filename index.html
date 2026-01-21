@@ -7,29 +7,78 @@
     <meta name="description" content="A minimal starter template." />
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
+    <!-- Header -->
     <header class="site-header">
       <h1>JJC Watching</h1>
       <nav>
         <a href="#home">Home</a>
-        <input type="text" placeholder="Search..">
-        <a href="#myMovies">My Movies</a>
+        <input type="text" placeholder="Search..." />
+        <button id="myMoviesBtn" onclick="openPanel()">My Movies</button>
       </nav>
     </header>
 
+    <!-- Side Panel -->
+    <div id="sidePanel">
+      <button id="closePanel" onclick="closePanel()">x</button>
+      <p>Your movie list goes here.</p>
+    </div>
+
+    <!-- Main Content -->
     <main id="home" class="container">
-      <section>
-        <h2>Home</h2>
-        <p>This is a simple HTML project template. Edit freely.</p>
-        <button id="helloBtn">Say Hello</button>
+
+      <!-- Drama -->
+      <section class="category">
+        <h2>Drama</h2>
+        <div class="movie-row">
+          <button class="square-button" data-id = "2">
+            M
+          </button>
+        </div>
       </section>
 
-      <section id="about">
-        <h2>About</h2>
-        <p>Built with plain HTML, CSS, and JavaScript—no frameworks.</p>
+      <!-- Action -->
+      <section class="category">
+        <h2>Action</h2>
+        <div class="movie-row">
+          <button class="square-button" data-id="1">
+            <img src="images/theTeachers.jpg" alt="The Teachers">
+          </button>
+          <button class="square-button" data-id="2">
+            <img src="images/inception.jpg" alt="Inception">
+          </button>
+        </div>
       </section>
+
+      <!-- Horror -->
+      <section class="category">
+        <h2>Horror</h2>
+        <div class="movie-row">
+          <button class="square-button">M</button>
+        </div>
+      </section>
+
+      <!-- Mystery -->
+      <section class="category">
+        <h2>Mystery</h2>
+        <div class="movie-row">
+          <button class="square-button">M</button>
+        </div>
+      </section>
+
+      <!-- Romance -->
+      <section class="category">
+        <h2>Romance</h2>
+        <div class="movie-row">
+          <button class="square-button">M</button>
+        </div>
+      </section>
+
+      
     </main>
 
+    <!-- Footer -->
     <footer class="site-footer">
       <small>&copy; <span id="years"></span> Your Name</small>
     </footer>
