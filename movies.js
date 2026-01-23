@@ -63,5 +63,30 @@ const movies = [
     year: 1978,
     genre: "horror",
     poster: "images/halloween.jpg"
+  },
+  {
+    id: 9,
+    title: "The Karate Kid",
+    description: "Danial tries to win the all valley.",
+    year: 1984,
+    genre: "drama",
+    poster: "images/karatekid.jpg"
+  },
+  {
+    id: 10,
+    title: "The Karate Kid 2",
+    description: "Danial battles in japan.",
+    year: 1986,
+    genre: "drama",
+    poster: "images/karatekid2.jpg"
+  },
+  {
+    id: 11,
+    title: "The Karate Kid 2",
+    description: "Danial battles in japan.",
+    year: 1989,
+    genre: "drama",
+    poster: "images/karatekid3.jpg"
   }
+
 ];
