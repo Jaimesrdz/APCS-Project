@@ -131,3 +131,17 @@ button:hover {
 .site-footer small {
   color: var(--muted);
 }
+
+.posterBox {
+  text-align: center;
+  background: radial-gradient(1200px 600px, #270125 0%, var(--bg) 50%);
+  border-radius: 5%;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, darkred, rgb(59, 1, 1)) 1;
+}
+
+.posterBox img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
