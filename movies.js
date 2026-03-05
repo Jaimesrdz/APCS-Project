@@ -82,11 +82,141 @@ const movies = [
   },
   {
     id: 11,
-    title: "The Karate Kid 2",
-    description: "Danial battles in japan.",
+    title: "The Karate Kid 3",
+    description: "Danial battles in the all valley again but with higher stakes.",
     year: 1989,
     genre: "drama",
     poster: "images/karatekid3.jpg"
-  }
+  },
+  {
+    id: 12,
+    title: "500 days of summer",
+    description: "A hopeless romantic seeks to find love",
+    year: 2009, 
+    genre: "romance",
+    poster: "images/500 days.jpg"
+  },
+  {
+    id: 13,
+    title: "Titanic",
+    description: "a poor child seeks love in a rich women",
+    year: 2009, 
+    genre: "romance",
+    poster: "images/titanic.jpg"
+  },
+  {
+    id: 14,
+    title: "De De Pyaar De 2",
+    description: "51-year-old Ashish (Ajay Devgn) and his younger girlfriend Ayesha (Rakul Preet Singh) as they navigate family approval",
+    year: 2025,
+    genre: "romance",
+    poster: "images/de de.jpg"
+  },
+  {
+    id: 15,
+    title: "Money Hiest",
+    description: "the gang robs a bank for a fellow member",
+    year: 2024,
+    genre: "action",
+    poster: "images/money hiest.jpg"
+  },
+  {
+    id: 16,
+    title: "The Notebook",
+    description: "The story about a notebook",
+    year: 2004,
+    genre: "romance",
+    poster: "images/notebook.jpg"
+  },
+  {
+    id: 17,
+    title: "Fire and Ice",
+    description: "a movie about love fire and ice",
+    year: 2001,
+    genre: "romance",
+    poster: "images/FI.jpg"
+  },
+  {
+    id: 18,
+    title: "People We meet on vaction",
+    description: "love story about falling in love on a cruise",
+    year: 2026,
+    genre: "romance",
+    poster: "images/people we meet.jpg"
+  },
+  {
+    id: 19,
+    title: "Love Again",
+    description: "two lovers fall in love again",
+    year: 2023,
+    genre: "romance",
+    poster: "images/Love Again.jpg"
+  },
+  {
+    id: 20,
+    title: "Nobody",
+    description: "Nobody fights to get his property back",
+    year: 2021,
+    genre: "action",
+    poster: "images/nobody.jpg"
+  },
+  {
+    id: 21,
+    title: "Nobody 2",
+    description: "Nobody goes on vaction and encounters trouble",
+    year: 2025,
+    genre: "action",
+    poster: "images/Nobody 2.jpg"
+  },
+  {
+    id: 22,
+    title: "Wraith of Man",
+    description: "A man goes after the ones that took some thing from him",
+    year: 2021,
+    genre: "action",
+    poster: "images/Wraith of Man.jpg"
+  },
+  {
+    id: 23,
+    title: "Edge of Tomorrow",
+    description: "Man goes relives tomorrow to save the world",
+    year: 2014,
+    genre: "action",
+    poster: "images/Edge of Tomorrow.jpg"
+  },
+  {
+    id: 24,
+    title: "Good Will Hunting",
+    description: "Man teaches another about life",
+    year: 1997,
+    genre: "Drama",
+    poster: "images/Good Will Hunting.jpg"
+  },
+  {
+    id: 25,
+    title: "Forest Gump",
+    description: "Man deals with life of war",
+    year: 1994,
+    genre: "Drama",
+    poster: "images/.jpg"
+  },
+  {
+    id: 26,
+    title: "Meet Joe Black",
+    description: "The devil becomes a human to find love",
+    year: 1998,
+    genre: "Drama",
+    poster: "images/Meet Joe Black.jpg"
+  },
+  {
+    id: 27,
+    title: "Edward Scissorhands",
+    description: "man with scissors for hands lives life",
+    year: 1990,
+    genre: "Drama",
+    poster: "images/Edaward Scissorhands.jpg"
+  },
+    
+
 
 ];
