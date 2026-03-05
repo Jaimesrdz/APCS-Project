@@ -20,3 +20,23 @@ movieCards.forEach(card => {
     window.location.href = `movie.html?id=${movieId}`;
   });
 });
+
+// This part will store the user's interactions with movies
+const userPrefs = {
+  likes: [],
+  dislikes: [],
+  favorites: [],
+};
+
+const actionButtons = document.querySelectorAll(".action-buttons button")
+actionButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    const preference = button.textContent.toLowerCase();
+
+    if (preference == "like") console.log("Liked");
+    if (preference == "dislike") addDislike(movieId);
+    if (preference == "favorites") addFavorite(movieId);
+
+    savePrefs();
+  })
+});
