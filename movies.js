@@ -214,9 +214,128 @@ const movies = [
     description: "man with scissors for hands lives life",
     year: 1990,
     genre: "Drama",
-    poster: "images/Edaward Scissorhands.jpg"
+    poster: "images/Edward Scissorhands.jpg"
   },
-    
+  {
+    id: 28,
+    title: "Jaws",
+    description: "a evil shark swims through the deep sea",
+    year: 1975,
+    genre: "Horror",
+    poster: "images/Jaws.jpg"
+  },
+  {
+    id: 29,
+    title: "The Texas Chainsaw Massacre",
+    description: "man with chainsaw kill people",
+    year: 1974,
+    genre: "Horror",
+    poster: "images/chainsaw massacre.jpg"
+  },
+  {
+    id: 30,
+    title: "It",
+    description: "clown tries to take kids",
+    year: 2017,
+    genre: "Horror",
+    poster: "images/It.jpg"
+  },
+  {
+    id: 31,
+    title: "It 2",
+    description: "clown tries to take adults this time",
+    year: 2019,
+    genre: "Horror",
+    poster: "images/It 2.jpg"
+  },
+  {
+    id: 32,
+    title: "Scream 7",
+    description: "scary man tries to kill people",
+    year: 2026,
+    genre: "Horror",
+    poster: "images/Scream 7.jpg"
+  },
+  {
+    id: 33,
+    title: "Annabelle",
+    description: "Scary doll tries to scare people",
+    year: 2014,
+    genre: "Horror",
+    poster: "images/annabelle.jpg"
+  },
+  {
+    id: 33,
+    title: "Nightmare on Elm Street 2",
+    description: "Freddy goes through peoples minds in their sleep",
+    year: ,
+    genre: "Horror",
+    poster: "images/.jpg"
+  },
+  {
+    id: 34,
+    title: "",
+    description: "",
+    year: ,
+    genre: "Horror",
+    poster: "images/.jpg"
+  },
+  {
+    id: 35,
+    title: "",
+    description: "",
+    year: ,
+    genre: "Mystery",
+    poster: "images/.jpg"
+  },
+  {
+    id: 36,
+    title: "",
+    description: "",
+    year: ,
+    genre: "Mystery",
+    poster: "images/.jpg"
+  },
+  {
+    id: 37,
+    title: "",
+    description: "",
+    year: ,
+    genre: "Mystery",
+    poster: "images/.jpg"
+  },
+  {
+    id: 38,
+    title: "",
+    description: "",
+    year: ,
+    genre: "Mystery",
+    poster: "images/.jpg"
+  },
+  {
+    id: 39,
+    title: "",
+    description: "",
+    year: ,
+    genre: "Mystery",
+    poster: "images/.jpg"
+  },
+  {
+    id: 40,
+    title: "",
+    description: "",
+    year: ,
+    genre: "Mystery",
+    poster: "images/.jpg"
+  },
+  {
+    id: 41,
+    title: "",
+    description: "",
+    year: ,
+    genre: "Mystery",
+    poster: "images/.jpg"
+  },
 
 
 ];
