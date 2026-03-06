@@ -6,7 +6,8 @@ const movies = [
     description: "A team of super intelligent teachers attempt to stop World War III.",
     year: 1993,
     genre: "Sci-Fi",
-    poster: "images/theTeachers.jpg"
+    poster: "images/theTeachers.jpg",
+    tags: ""
   },
   {
     id: 2,
@@ -77,7 +78,7 @@ const movies = [
     title: "The Karate Kid 2",
     description: "Danial battles in japan.",
     year: 1986,
-    genre: "drama",
+    genre: "action",
     poster: "images/karatekid2.jpg"
   },
   {

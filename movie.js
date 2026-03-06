@@ -10,6 +10,8 @@ if (movie) {
   document.getElementById("title").textContent = movie.title;
   document.getElementById("description").textContent = movie.description;
   document.getElementById("poster").src = movie.poster;
+  document.getElementById("genre").textContent = movie.genre;
+   document.getElementById("tags").textContent = movie.tags;
 } else {
   document.body.innerHTML = "<h1>Movie not found</h1>";
 }
