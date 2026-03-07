@@ -4,12 +4,35 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>JJC Watching</title>
-    <meta name="description" content="A minimal starter template." />
+    <meta name="description"/>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
-  <!--Reads ths ID-->
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const movieId = params.get("id");
-  </script>
+ <body> 
+  <div class="media-layout"> 
+  <div class="posterBox"> 
+    <img id="poster"> 
+  </div> 
+</div class="info">
+    <h1 id="title"></h1>
+    <p id="description"></p>
+    
+<div class="action-buttons">
+  <button>like</button>
+  <button>dislike</button>
+  <button>favorites</button>
+</div>
+
+ <div class="tags">
+  <h1>Tags</h1> 
+  <p>
+  </p>
+ </div>
+  <div class="genre">
+    <h1>Genre</h1>
+    <p id="genre"></p>
+  
+    <script src="movies.js"></script>
+    <script src="movie.js"></script>
+  </body>
+</html>

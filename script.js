@@ -2,49 +2,12 @@
 document.getElementById('years').textContent = new Date().getFullYear();
 
 function openPanel(){
-  document.getElementById("sidePanel").classList.add("active")
+  document.getElementById("sidePanel").classList.add("active");
 }
 
 function closePanel() {
   document.getElementById("sidePanel").classList.remove("active");
 }
-
-// Our list
-const movies = [
-  {
-    id: 1,
-    title: "The Teachers",
-    description: "A team of super intelligent teachers attempt to stop World War III.",
-    year: 2010,
-    genre: "Sci-Fi",
-    poster: "images/inception.jpg"
-  },
-  {
-    id: 2,
-    title: "Inception",
-    description: "A thief who steals secrets through dream-sharing technology.",
-    year: 2010,
-    genre: "Sci-Fi",
-    poster: "images/inception.jpg"
-  },
-  {
-    id: 3,
-    title: "Interstellar",
-    description: "A team of explorers travel through a wormhole in space.",
-    year: 2014,
-    genre: "Sci-Fi",
-    poster: "images/interstellar.jpg"
-  },
-  {
-    id: 4,
-    title: "The Dark Knight",
-    description: "Batman faces the Joker in Gotham City.",
-    year: 2008,
-    genre: "Action",
-    poster: "images/dark-knight.jpg"
-  }
-];
-
 
 // Select all movie cards
 const movieCards = document.querySelectorAll(".square-button");
@@ -55,4 +18,49 @@ movieCards.forEach(card => {
     const movieId = card.dataset.id; // gets data-id
     window.location.href = `movie.html?id=${movieId}`;
   });
+});
+
+// Search function
+const searchInput = document.querySelector("nav input[type='text']"); // Selects the search bar
+const categories = document.querySelectorAll(".category"); // and the categories
+
+// Constantly listening for inputs
+searchInput.addEventListener("input", () => {
+  const query = searchInput.value.toLowerCase();
+
+  // Get the alt from each movie card
+  movieCards.forEach(card => {
+    const title = card.querySelector("img").alt.toLowerCase();
+    const matches = title.includes(query);  // Match alts to user search
+
+    // Hide movies that dont match the search
+    card.style.display = matches ? "inline-block" : "none";
+  });
+
+  // Hide categories with no visible movies
+  categories.forEach(section => {
+    const visibleMovies = section.querySelectorAll(".square-button:not([style*='display: none'])");
+    section.style.display = visibleMovies.length > 0 ? "block" : "none";
+  });
+});
+
+
+// This part will store the user's interactions with movies
+const userPrefs = {
+  likes: [],
+  dislikes: [],
+  favorites: [],
+};
+
+const actionButtons = document.querySelectorAll(".action-buttons button")
+actionButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    const preference = button.textContent.toLowerCase();
+
+    if (preference == "like") console.log("Liked");
+    if (preference == "dislike") addDislike(movieId);
+    if (preference == "favorites") addFavorite(movieId);
+    console.log(actionButtons);
+    savePrefs();
+  })
 });
