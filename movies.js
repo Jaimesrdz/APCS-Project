@@ -269,7 +269,7 @@ const movies = [
     id: 33,
     title: "Nightmare on Elm Street 2",
     description: "Freddy goes through peoples minds in their sleep",
-    year: ,
+    year: "placeholder",
     genre: "Horror",
     poster: "images/.jpg"
   },
@@ -277,7 +277,7 @@ const movies = [
     id: 34,
     title: "",
     description: "",
-    year: ,
+    year: "placeholder",
     genre: "Horror",
     poster: "images/.jpg"
   },
@@ -285,7 +285,7 @@ const movies = [
     id: 35,
     title: "",
     description: "",
-    year: ,
+    year: "placeholder",
     genre: "Mystery",
     poster: "images/.jpg"
   },
@@ -293,7 +293,7 @@ const movies = [
     id: 36,
     title: "",
     description: "",
-    year: ,
+    year: "placeholder",
     genre: "Mystery",
     poster: "images/.jpg"
   },
@@ -301,7 +301,7 @@ const movies = [
     id: 37,
     title: "",
     description: "",
-    year: ,
+    year: "placeholder",
     genre: "Mystery",
     poster: "images/.jpg"
   },
@@ -309,7 +309,7 @@ const movies = [
     id: 38,
     title: "",
     description: "",
-    year: ,
+    year: "placeholder",
     genre: "Mystery",
     poster: "images/.jpg"
   },
@@ -317,7 +317,7 @@ const movies = [
     id: 39,
     title: "",
     description: "",
-    year: ,
+    year: "placeholder",
     genre: "Mystery",
     poster: "images/.jpg"
   },
@@ -325,7 +325,7 @@ const movies = [
     id: 40,
     title: "",
     description: "",
-    year: ,
+    year: "placeholder",
     genre: "Mystery",
     poster: "images/.jpg"
   },
@@ -333,7 +333,7 @@ const movies = [
     id: 41,
     title: "",
     description: "",
-    year: ,
+    year: "placeholder",
     genre: "Mystery",
     poster: "images/.jpg"
   },
