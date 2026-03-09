@@ -16,36 +16,60 @@ if (movie) {
   document.body.innerHTML = "<h1>Movie not found</h1>";
 }
 
+// Saves prefs for when the user leaves the page
 function savePrefs() {
   localStorage.setItem("userPrefs", JSON.stringify(userPrefs));
 }
 
 // This part will store the user's interactions with movies
-const userPrefs = {
+const userPrefs  = JSON.parse(localStorage.getItem("userPrefs")) || {
   likes: [],
   dislikes: [],
   favorites: [],
 };
 
 const actionButtons = document.querySelectorAll(".action-buttons button")
+const likeId = document.getElementById("like")
+const DislikeId = document.getElementById("dislike")
+const FavoriteId = document.getElementById("favorite")
 actionButtons.forEach(button => {
   button.addEventListener("click", () => {
     const preference = button.textContent.toLowerCase();
-    // Get movieId from button's data attribute
-    const movieId = button.dataset.id || button.closest('.square-button')?.dataset.id;
 
     if (preference == "like") {
-      console.log("Liked", movieId);
-      // Optionally: addLike(movieId);
+      const index = userPrefs.likes.indexOf(movieId)
+      if (index === -1) {
+        userPrefs.likes.push(movieId);
+        likeId.textContent = "liked";
+      }
+      else{
+        userPrefs.likes.splice(index, 1);
+        likeId.textContent = "like";
+    }
     }
     if (preference == "dislike") {
-      console.log("Disliked", movieId);
-      addDislike(movieId);
+      const index = userPrefs.dislikes.indexOf(movieId)
+      if (index === -1) {
+        userPrefs.dislikes.push(movieId);
+        DislikeId.textContent = "disliked";
+      }
+      else{
+        userPrefs.dislikes.splice(index, 1);
+        DislikeId.textContent = "dislike";
     }
-    if (preference == "favorites") {
-      console.log("Favorited", movieId);
-      addFavorite(movieId);
     }
-    savePrefs();
+    if (preference == "favorite") {
+      const index = userPrefs.favorites.indexOf(movieId)
+      if (index === -1) {
+        userPrefs.favorites.push(movieId);
+        FavoriteId.textContent = "favorited";
+      }
+      else{
+        userPrefs.favorites.splice(index, 1);
+        FavoriteId.textContent = "favorite";
+    }
+    }
+    savePrefs()
+    console.log(userPrefs)
   });
 });
