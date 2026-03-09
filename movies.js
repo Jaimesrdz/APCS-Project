@@ -38,7 +38,7 @@ const movies = [
     title: "The Great Gatsby",
     description: "Man falls in love.",
     year: 2013,
-    genre: "drama",
+    genre: "Drama",
     poster: "images/the great gatsby.jpg"
   },
     {
@@ -46,7 +46,7 @@ const movies = [
     title: "Someone like you",
     description: "Dawson searches for his hb sister.",
     year: 2024,
-    genre: "romance",
+    genre: "Romance",
     poster: "images/someonelikeyou.jpg"
   },
   {
@@ -54,7 +54,7 @@ const movies = [
     title: "Five Nights at Freddys",
     description: "security gaurd tries to survive.",
     year: 2023,
-    genre: "mystery",
+    genre: "Mystery",
     poster: "images/fivenightsatfreddys.jpg"
   },
   {
@@ -62,7 +62,7 @@ const movies = [
     title: "Halloween",
     description: "Michael myers tries to unalive people.",
     year: 1978,
-    genre: "horror",
+    genre: "Horror",
     poster: "images/halloween.jpg"
   },
   {
@@ -70,7 +70,7 @@ const movies = [
     title: "The Karate Kid",
     description: "Danial tries to win the all valley.",
     year: 1984,
-    genre: "drama",
+    genre: "Drama",
     poster: "images/karatekid.jpg"
   },
   {
@@ -78,7 +78,7 @@ const movies = [
     title: "The Karate Kid 2",
     description: "Danial battles in japan.",
     year: 1986,
-    genre: "action",
+    genre: "Action",
     poster: "images/karatekid2.jpg"
   },
   {
@@ -86,7 +86,7 @@ const movies = [
     title: "The Karate Kid 3",
     description: "Danial battles in the all valley again but with higher stakes.",
     year: 1989,
-    genre: "drama",
+    genre: "Drama",
     poster: "images/karatekid3.jpg"
   },
   {
@@ -94,7 +94,7 @@ const movies = [
     title: "500 days of summer",
     description: "A hopeless romantic seeks to find love",
     year: 2009, 
-    genre: "romance",
+    genre: "Romance",
     poster: "images/500 days.jpg"
   },
   {
@@ -102,7 +102,7 @@ const movies = [
     title: "Titanic",
     description: "a poor child seeks love in a rich women",
     year: 2009, 
-    genre: "romance",
+    genre: "Romance",
     poster: "images/titanic.jpg"
   },
   {
@@ -110,7 +110,7 @@ const movies = [
     title: "De De Pyaar De 2",
     description: "51-year-old Ashish (Ajay Devgn) and his younger girlfriend Ayesha (Rakul Preet Singh) as they navigate family approval",
     year: 2025,
-    genre: "romance",
+    genre: "Romance",
     poster: "images/de de.jpg"
   },
   {
@@ -118,7 +118,7 @@ const movies = [
     title: "Money Hiest",
     description: "the gang robs a bank for a fellow member",
     year: 2024,
-    genre: "action",
+    genre: "Action",
     poster: "images/money hiest.jpg"
   },
   {
@@ -126,7 +126,7 @@ const movies = [
     title: "The Notebook",
     description: "The story about a notebook",
     year: 2004,
-    genre: "romance",
+    genre: "Romance",
     poster: "images/notebook.jpg"
   },
   {
@@ -134,7 +134,7 @@ const movies = [
     title: "Fire and Ice",
     description: "a movie about love fire and ice",
     year: 2001,
-    genre: "romance",
+    genre: "Romance",
     poster: "images/FI.jpg"
   },
   {
@@ -142,7 +142,7 @@ const movies = [
     title: "People We meet on vaction",
     description: "love story about falling in love on a cruise",
     year: 2026,
-    genre: "romance",
+    genre: "Romance",
     poster: "images/people we meet.jpg"
   },
   {
@@ -150,7 +150,7 @@ const movies = [
     title: "Love Again",
     description: "two lovers fall in love again",
     year: 2023,
-    genre: "romance",
+    genre: "Romance",
     poster: "images/Love Again.jpg"
   },
   {
@@ -158,7 +158,7 @@ const movies = [
     title: "Nobody",
     description: "Nobody fights to get his property back",
     year: 2021,
-    genre: "action",
+    genre: "Action",
     poster: "images/nobody.jpg"
   },
   {
@@ -166,7 +166,7 @@ const movies = [
     title: "Nobody 2",
     description: "Nobody goes on vaction and encounters trouble",
     year: 2025,
-    genre: "action",
+    genre: "Action",
     poster: "images/Nobody 2.jpg"
   },
   {
@@ -174,7 +174,7 @@ const movies = [
     title: "Wraith of Man",
     description: "A man goes after the ones that took some thing from him",
     year: 2021,
-    genre: "action",
+    genre: "Action",
     poster: "images/Wraith of Man.jpg"
   },
   {
@@ -182,7 +182,7 @@ const movies = [
     title: "Edge of Tomorrow",
     description: "Man goes relives tomorrow to save the world",
     year: 2014,
-    genre: "action",
+    genre: "Action",
     poster: "images/Edge of Tomorrow.jpg"
   },
   {

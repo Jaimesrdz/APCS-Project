@@ -36,7 +36,7 @@ actionButtons.forEach(button => {
   button.addEventListener("click", () => {
     const preference = button.textContent.toLowerCase();
 
-    if (preference == "like") {
+    if (preference == "like" || preference == "liked") {
       const index = userPrefs.likes.indexOf(movieId)
       if (index === -1) {
         userPrefs.likes.push(movieId);
@@ -47,7 +47,7 @@ actionButtons.forEach(button => {
         likeId.textContent = "like";
     }
     }
-    if (preference == "dislike") {
+    if (preference == "dislike" || preference == "disliked") {
       const index = userPrefs.dislikes.indexOf(movieId)
       if (index === -1) {
         userPrefs.dislikes.push(movieId);
@@ -58,7 +58,7 @@ actionButtons.forEach(button => {
         DislikeId.textContent = "dislike";
     }
     }
-    if (preference == "favorite") {
+    if (preference == "favorite" || preference == "favorited") {
       const index = userPrefs.favorites.indexOf(movieId)
       if (index === -1) {
         userPrefs.favorites.push(movieId);
