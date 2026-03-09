@@ -15,13 +15,13 @@
       <nav>
         <a href="#home">Home</a>
         <input type="text" placeholder="Search..." />
-        <button id="myMoviesBtn" onclick="openPanel()">My Movies</button>
+        <button id="myMoviesBtn" onclick="openPanel('sidePanel')">My Movies</button>
       </nav>
     </header>
 
     <!-- Side Panel -->
     <div id="sidePanel">
-      <button id="closePanel" onclick="closePanel()">x</button>
+      <button id="closePanel" onclick="closePanel('sidePanel')">x</button>
       <p>Your movie list goes here.</p>
     </div>
 
@@ -191,6 +191,6 @@
       <small>&copy; <span id="years"></span> JJC Watching</small>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>

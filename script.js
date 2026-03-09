@@ -1,12 +1,10 @@
-// Update footer year
-document.getElementById('years').textContent = new Date().getFullYear();
-
-function openPanel(){
-  document.getElementById("sidePanel").classList.add("active");
+// Here's the function with a parameter
+function openPanel(panelId){
+  document.getElementById(panelId).classList.add("active");
 }
 
-function closePanel() {
-  document.getElementById("sidePanel").classList.remove("active");
+function closePanel(panelId) {
+  document.getElementById(panelId).classList.remove("active");
 }
 
 // Select all movie cards
@@ -45,22 +43,3 @@ searchInput.addEventListener("input", () => {
 });
 
 
-// This part will store the user's interactions with movies
-const userPrefs = {
-  likes: [],
-  dislikes: [],
-  favorites: [],
-};
-
-const actionButtons = document.querySelectorAll(".action-buttons button")
-actionButtons.forEach(button => {
-  button.addEventListener("click", () => {
-    const preference = button.textContent.toLowerCase();
-
-    if (preference == "like") console.log("Liked");
-    if (preference == "dislike") addDislike(movieId);
-    if (preference == "favorites") addFavorite(movieId);
-    console.log(actionButtons);
-    savePrefs();
-  })
-});

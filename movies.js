@@ -199,7 +199,7 @@ const movies = [
     description: "Man deals with life of war",
     year: 1994,
     genre: "Drama",
-    poster: "images/.jpg"
+    poster: "images/Forest Gump.jpg"
   },
   {
     id: 26,

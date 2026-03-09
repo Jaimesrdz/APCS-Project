@@ -11,8 +11,41 @@ if (movie) {
   document.getElementById("description").textContent = movie.description;
   document.getElementById("poster").src = movie.poster;
   document.getElementById("genre").textContent = movie.genre;
-   document.getElementById("tags").textContent = movie.tags;
+  //document.getElementById("tags").textContent = movie.tags;
 } else {
   document.body.innerHTML = "<h1>Movie not found</h1>";
 }
 
+function savePrefs() {
+  localStorage.setItem("userPrefs", JSON.stringify(userPrefs));
+}
+
+// This part will store the user's interactions with movies
+const userPrefs = {
+  likes: [],
+  dislikes: [],
+  favorites: [],
+};
+
+const actionButtons = document.querySelectorAll(".action-buttons button")
+actionButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    const preference = button.textContent.toLowerCase();
+    // Get movieId from button's data attribute
+    const movieId = button.dataset.id || button.closest('.square-button')?.dataset.id;
+
+    if (preference == "like") {
+      console.log("Liked", movieId);
+      // Optionally: addLike(movieId);
+    }
+    if (preference == "dislike") {
+      console.log("Disliked", movieId);
+      addDislike(movieId);
+    }
+    if (preference == "favorites") {
+      console.log("Favorited", movieId);
+      addFavorite(movieId);
+    }
+    savePrefs();
+  });
+});
