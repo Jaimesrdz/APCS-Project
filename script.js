@@ -1,9 +1,9 @@
 // Reset local storage
 //localStorage.removeItem("userPrefs");
 
-function loadFavorites() {
-  const list = document.getElementById("favoritesList");
-  list.innerHTML = ""
+function loadFavorites(favoritesList) {
+  
+  favoritesList.innerHTML = ""
 
   userPrefs.favorites.forEach(id => {
     const movie = movies.find(m => m.id === id);
@@ -23,13 +23,15 @@ function loadFavorites() {
       window.location.href = `movie.html?id=${movie.id}`;
     });
 
-    list.appendChild(item);
+    favoritesList.appendChild(item);
   });
 }
 
+const favorites = document.getElementById("favoritesList");
+
 // Here's the function with a parameter
 function openPanel(panelId){
-  loadFavorites(); // Load favorites when opening the panel
+  loadFavorites(favorites); // Load favorites when opening the panel
   document.getElementById(panelId).classList.add("active");
 }
 
