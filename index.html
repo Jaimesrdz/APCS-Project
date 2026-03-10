@@ -22,14 +22,20 @@
     <!-- Side Panel -->
     <div id="sidePanel">
       <button id="closePanel" onclick="closePanel('sidePanel')">x</button>
-      <p>Your movie list goes here.</p>
+      <h2>My Movies</h2>
+      <div id = "favoritesList">
+      </div>
     </div>
 
     <!-- Main Content -->
     <main id="home" class="container">
 
-      <section class="category">
+      <!-- Recommended -->
+      <section id="recommended" class="category">
         <h2>Recommended</h2>
+        <div id="recommendedRow" class="movie-row">
+          <!-- Recommended movies added here -->
+        </div>
       </section>
 
       <!-- Drama -->
@@ -189,12 +195,7 @@
 
       
     </main>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-      <small>&copy; <span id="years"></span> JJC Watching</small>
-    </footer>
-
+    <script src="movies.js"></script>
     <script src="script.js" defer></script>
   </body>
 </html>

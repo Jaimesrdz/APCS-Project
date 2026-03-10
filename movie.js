@@ -24,14 +24,28 @@ function savePrefs() {
 // This part will store the user's interactions with movies
 const userPrefs  = JSON.parse(localStorage.getItem("userPrefs")) || {
   likes: [],
-  dislikes: [],
   favorites: [],
+  likedGenres: [],
 };
 
 const actionButtons = document.querySelectorAll(".action-buttons button")
 const likeId = document.getElementById("like")
 const DislikeId = document.getElementById("dislike")
 const FavoriteId = document.getElementById("favorite")
+
+if (userPrefs.likes.includes(movieId)) {
+  likeId.textContent = "liked";
+}
+
+if (userPrefs.dislikes.includes(movieId)) {
+  DislikeId.textContent = "disliked";
+}
+
+if (userPrefs.favorites.includes(movieId)) {
+  FavoriteId.textContent = "favorited";
+}
+
+// This part saves user preferences
 actionButtons.forEach(button => {
   button.addEventListener("click", () => {
     const preference = button.textContent.toLowerCase();
@@ -40,22 +54,22 @@ actionButtons.forEach(button => {
       const index = userPrefs.likes.indexOf(movieId)
       if (index === -1) {
         userPrefs.likes.push(movieId);
+        // Dont forget the genre for the recommendation system
+          if (!userPrefs.likedGenres.includes(movie.genre)) {
+            userPrefs.likedGenres.push(movie.genre);
+          }
         likeId.textContent = "liked";
       }
       else{
         userPrefs.likes.splice(index, 1);
+          // Remove genre if no more movies of that genre are liked
+          if (!movies.some(m => userPrefs.likes.includes(m.id) && m.genre === movie.genre)) {
+            const genreIndex = userPrefs.likedGenres.indexOf(movie.genre);
+            if (genreIndex !== -1) {
+              userPrefs.likedGenres.splice(genreIndex, 1);
+            }
+          }
         likeId.textContent = "like";
-    }
-    }
-    if (preference == "dislike" || preference == "disliked") {
-      const index = userPrefs.dislikes.indexOf(movieId)
-      if (index === -1) {
-        userPrefs.dislikes.push(movieId);
-        DislikeId.textContent = "disliked";
-      }
-      else{
-        userPrefs.dislikes.splice(index, 1);
-        DislikeId.textContent = "dislike";
     }
     }
     if (preference == "favorite" || preference == "favorited") {
