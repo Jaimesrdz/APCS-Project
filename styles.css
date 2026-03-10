@@ -77,6 +77,36 @@ object-fit: cover;
   border-radius: 16px;
   width: 300px;
   height: 100%;
+  overflow-y: auto;
+}
+
+#sidePanel {
+  overflow-y: auto;
+}
+
+#favoritesList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px;
+}
+
+.favorite-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.favorite-item button {
+  width: 112.5px;
+  gap: 10px;
+  height:150px;;
+}
+
+.favorite-item button img{
+  width: 112.5px;
+  gap: 10px;
+  height:150px;;
 }
 
 #sidePanel.active{
@@ -106,7 +136,6 @@ nav input[type="text"]:focus {
   outline: none;
   box-shadow: 0 0 0 2px rgba(185, 107, 4, 0.3);
 }
-
 
 nav a:hover {
   color: var(--accent);

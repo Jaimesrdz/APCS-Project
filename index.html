@@ -15,18 +15,28 @@
       <nav>
         <a href="#home">Home</a>
         <input type="text" placeholder="Search..." />
-        <button id="myMoviesBtn" onclick="openPanel()">My Movies</button>
+        <button id="myMoviesBtn" onclick="openPanel('sidePanel')">My Movies</button>
       </nav>
     </header>
 
     <!-- Side Panel -->
     <div id="sidePanel">
-      <button id="closePanel" onclick="closePanel()">x</button>
-      <p>Your movie list goes here.</p>
+      <button id="closePanel" onclick="closePanel('sidePanel')">x</button>
+      <h2>My Movies</h2>
+      <div id = "favoritesList">
+      </div>
     </div>
 
     <!-- Main Content -->
     <main id="home" class="container">
+
+      <!-- Recommended -->
+      <section id="recommended" class="category">
+        <h2>Recommended</h2>
+        <div id="recommendedRow" class="movie-row">
+          <!-- Recommended movies added here -->
+        </div>
+      </section>
 
       <!-- Drama -->
       <section class="category">
@@ -185,12 +195,7 @@
 
       
     </main>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-      <small>&copy; <span id="years"></span> JJC Watching</small>
-    </footer>
-
-    <script src="script.js"></script>
+    <script src="movies.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
