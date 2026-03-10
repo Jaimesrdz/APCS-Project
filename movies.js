@@ -266,71 +266,71 @@ const movies = [
     poster: "images/annabelle.jpg"
   },
   {
-    id: 33,
+    id: 34,
     title: "Nightmare on Elm Street 2",
     description: "Freddy goes through peoples minds in their sleep",
-    year: "placeholder",
+    year: "1985",
     genre: "Horror",
-    poster: "images/.jpg"
-  },
-  {
-    id: 34,
-    title: "",
-    description: "",
-    year: "placeholder",
-    genre: "Horror",
-    poster: "images/.jpg"
+    poster: "images/Nightmare on Elm Street.jpg"
   },
   {
     id: 35,
-    title: "",
-    description: "",
-    year: "placeholder",
+    title: "Event Horizon",
+    description: "Humans try to take over a alien world",
+    year: "1997",
     genre: "Mystery",
-    poster: "images/.jpg"
+    poster: "images/Event Horizon.jpg"
   },
   {
     id: 36,
-    title: "",
-    description: "",
-    year: "placeholder",
+    title: "Prisoners",
+    description: "Two guys break out of the prison that is their mind",
+    year: "2013",
     genre: "Mystery",
-    poster: "images/.jpg"
+    poster: "images/prisoners.jpg"
   },
   {
     id: 37,
-    title: "",
-    description: "",
-    year: "placeholder",
+    title: "The Green Mile",
+    description: "Man gets tried for a crime he did not commit",
+    year: "1999",
     genre: "Mystery",
-    poster: "images/.jpg"
+    poster: "images/The Green Mile.jpg"
   },
   {
     id: 38,
-    title: "",
-    description: "",
-    year: "placeholder",
+    title: "Murdery Mystery",
+    description: "a couple goes on a adventure",
+    year: "2019",
     genre: "Mystery",
-    poster: "images/.jpg"
+    poster: "images/Murder Mystery.jpg"
   },
   {
     id: 39,
-    title: "",
-    description: "",
-    year: "placeholder",
+    title: "Murder Mystery 2",
+    description: "A couple goes on a quest to find the things they've lost",
+    year: "2023",
     genre: "Mystery",
-    poster: "images/.jpg"
+    poster: "images/Murder Mystery 2.jpg"
   },
   {
     id: 40,
-    title: "",
-    description: "",
-    year: "placeholder",
+    title: "Game Night ",
+    description: "A couple is in for a twist when they have a game night",
+    year: "2018",
     genre: "Mystery",
-    poster: "images/.jpg"
+    poster: "images/Game Night.jpg"
   },
   {
     id: 41,
+    title: "Reptile",
+    description: "A man finds a twist when investigating a murder scene",
+    year: "2023",
+    genre: "Mystery",
+    poster: "images/Reptile.jpg"
+  },
+  {
+    id: 42,
     title: "",
     description: "",
     year: "placeholder",
