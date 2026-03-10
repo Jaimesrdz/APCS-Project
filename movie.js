@@ -37,10 +37,6 @@ if (userPrefs.likes.includes(movieId)) {
   likeId.textContent = "liked";
 }
 
-if (userPrefs.dislikes.includes(movieId)) {
-  DislikeId.textContent = "disliked";
-}
-
 if (userPrefs.favorites.includes(movieId)) {
   FavoriteId.textContent = "favorited";
 }
